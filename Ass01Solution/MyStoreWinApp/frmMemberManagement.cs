@@ -59,10 +59,15 @@ namespace MyStoreWinApp
         {
             try
             {
-                List<MemberObject> members = memberRepository.GetAllMembers();
-                var member = GetMemberObject();
-                memberRepository.DeleteMember(member.MemberID);
-                LoadMemberList(members);
+                DialogResult result = MessageBox.Show("Do you really want to delete this member?", "Confirmation", MessageBoxButtons.OKCancel);
+                if(result == DialogResult.OK)
+                {
+                    List<MemberObject> members = memberRepository.GetAllMembers();
+                    var member = GetMemberObject();
+                    memberRepository.DeleteMember(member.MemberID);
+                    LoadMemberList(members);
+                }
+                
             }
             catch (Exception ex)
             {

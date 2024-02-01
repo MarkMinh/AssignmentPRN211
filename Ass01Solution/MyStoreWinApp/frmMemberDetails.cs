@@ -29,8 +29,17 @@ namespace MyStoreWinApp
         private void btnSave_Click(object sender, EventArgs e)
         {       
             try
-            {              
-                DialogResult result = MessageBox.Show("Do you really want to update your profile?", "Confirmation", MessageBoxButtons.OKCancel);
+            {
+                DialogResult result;
+                if (InsertOrUpdate == true)
+                {
+                     result = MessageBox.Show("Do you really want to update your profile?", "Confirmation", MessageBoxButtons.OKCancel);
+                }
+                else
+                {
+                     result = MessageBox.Show("Do you really want to add new member?", "Confirmation", MessageBoxButtons.OKCancel);
+                }
+                    
                 if (result == DialogResult.OK)
                 {
                     var memberObject = new MemberObject
