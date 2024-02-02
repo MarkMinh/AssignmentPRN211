@@ -56,7 +56,7 @@
             txtPass.Location = new Point(307, 129);
             txtPass.Name = "txtPass";
             txtPass.Size = new Size(273, 27);
-            txtPass.TabIndex = 0;
+            txtPass.TabIndex = 1;
             // 
             // lbPassword
             // 
@@ -69,6 +69,7 @@
             // 
             // btnLogin
             // 
+            btnLogin.DialogResult = DialogResult.OK;
             btnLogin.Location = new Point(307, 197);
             btnLogin.Name = "btnLogin";
             btnLogin.Size = new Size(94, 29);
@@ -79,6 +80,7 @@
             // 
             // frmLogin
             // 
+            AcceptButton = btnLogin;
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);

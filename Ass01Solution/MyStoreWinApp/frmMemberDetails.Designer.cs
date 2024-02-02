@@ -58,7 +58,7 @@
             txtMemberID.Location = new Point(259, 49);
             txtMemberID.Name = "txtMemberID";
             txtMemberID.Size = new Size(333, 27);
-            txtMemberID.TabIndex = 1;
+            txtMemberID.TabIndex = 0;
             // 
             // label2
             // 
@@ -90,7 +90,7 @@
             txtEmail.Location = new Point(259, 153);
             txtEmail.Name = "txtEmail";
             txtEmail.Size = new Size(333, 27);
-            txtEmail.TabIndex = 1;
+            txtEmail.TabIndex = 2;
             // 
             // label4
             // 
@@ -106,7 +106,7 @@
             txtPass.Location = new Point(259, 204);
             txtPass.Name = "txtPass";
             txtPass.Size = new Size(333, 27);
-            txtPass.TabIndex = 1;
+            txtPass.TabIndex = 3;
             // 
             // label5
             // 
@@ -122,7 +122,8 @@
             txtCity.Location = new Point(259, 256);
             txtCity.Name = "txtCity";
             txtCity.Size = new Size(333, 27);
-            txtCity.TabIndex = 1;
+            txtCity.TabIndex = 4;
+            txtCity.TextChanged += txtCity_TextChanged;
             // 
             // label6
             // 
@@ -138,7 +139,7 @@
             txtCountry.Location = new Point(259, 307);
             txtCountry.Name = "txtCountry";
             txtCountry.Size = new Size(333, 27);
-            txtCountry.TabIndex = 1;
+            txtCountry.TabIndex = 5;
             // 
             // btnSave
             // 
@@ -146,7 +147,7 @@
             btnSave.Location = new Point(272, 362);
             btnSave.Name = "btnSave";
             btnSave.Size = new Size(94, 29);
-            btnSave.TabIndex = 2;
+            btnSave.TabIndex = 6;
             btnSave.Text = "Save";
             btnSave.UseVisualStyleBackColor = true;
             btnSave.Click += btnSave_Click;
@@ -157,13 +158,14 @@
             btnCancel.Location = new Point(477, 362);
             btnCancel.Name = "btnCancel";
             btnCancel.Size = new Size(94, 29);
-            btnCancel.TabIndex = 2;
+            btnCancel.TabIndex = 7;
             btnCancel.Text = "Cancel";
             btnCancel.UseVisualStyleBackColor = true;
             btnCancel.Click += btnCancel_Click;
             // 
             // frmMemberDetails
             // 
+            AcceptButton = btnSave;
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);

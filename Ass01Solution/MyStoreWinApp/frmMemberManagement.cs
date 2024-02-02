@@ -17,6 +17,7 @@ namespace MyStoreWinApp
         IMemberRepository memberRepository = new MemberRepository();
         BindingSource source;
         int modeFilter = 0;
+        
         public frmMemberManagement()
         {
             InitializeComponent();
@@ -175,6 +176,7 @@ namespace MyStoreWinApp
 
         private void btnClose_Click(object sender, EventArgs e)
         {
+            
             Close();
         }
 
@@ -252,7 +254,7 @@ namespace MyStoreWinApp
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
             List<MemberObject> membersSearch = memberRepository.SearchMembersByName(txtSearchName.Text);
-            MemberObject member = memberRepository.GetMemberByID(int.Parse(txtSearchID.Text));
+            
 
             LoadMemberList(membersSearch);
         }

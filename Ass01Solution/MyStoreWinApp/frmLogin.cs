@@ -35,7 +35,8 @@ namespace MyStoreWinApp
             {
                 MessageBox.Show("Login by admin account successfully !!");
                 Hide();
-                frmMemberManagement frmMemberManagement = new frmMemberManagement();
+                frmMemberManagement frmMemberManagement = new frmMemberManagement() { };
+                
                 frmMemberManagement.Show();
             }
                 else if(memberRepository.GetMemberByEmailAndPassword(email,pass)!=null)

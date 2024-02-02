@@ -19,27 +19,27 @@ namespace MyStoreWinApp
         {
             InitializeComponent();
         }
-        public MemberObject MemberInfo {  get; set; }
+        public MemberObject MemberInfo { get; set; }
         public bool InsertOrUpdate { get; set; }
 
         public bool isMember { get; set; }
         public IMemberRepository MemberRepository { get; set; }
-        
+
 
         private void btnSave_Click(object sender, EventArgs e)
-        {       
+        {
             try
             {
                 DialogResult result;
                 if (InsertOrUpdate == true)
                 {
-                     result = MessageBox.Show("Do you really want to update your profile?", "Confirmation", MessageBoxButtons.OKCancel);
+                    result = MessageBox.Show("Do you really want to update your profile?", "Confirmation", MessageBoxButtons.OKCancel);
                 }
                 else
                 {
-                     result = MessageBox.Show("Do you really want to add new member?", "Confirmation", MessageBoxButtons.OKCancel);
+                    result = MessageBox.Show("Do you really want to add new member?", "Confirmation", MessageBoxButtons.OKCancel);
                 }
-                    
+
                 if (result == DialogResult.OK)
                 {
                     var memberObject = new MemberObject
@@ -60,7 +60,7 @@ namespace MyStoreWinApp
                         MemberRepository.UpdateMember(memberObject);
                     }
                 }
-                
+
 
             }
             catch (Exception ex)
@@ -73,7 +73,7 @@ namespace MyStoreWinApp
 
         private void frmMemberDetails_Load(object sender, EventArgs e)
         {
-            if(isMember)
+            if (isMember)
             {
                 btnCancel.Text = "Log Out";
             }
@@ -87,6 +87,11 @@ namespace MyStoreWinApp
                 txtCity.Text = MemberInfo.City.Trim();
                 txtCountry.Text = MemberInfo.Country.Trim();
             }
+
+        }
+
+        private void txtCity_TextChanged(object sender, EventArgs e)
+        {
 
         }
     }

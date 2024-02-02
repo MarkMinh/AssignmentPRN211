@@ -70,7 +70,7 @@
             btnClose.Location = new Point(418, 423);
             btnClose.Name = "btnClose";
             btnClose.Size = new Size(94, 29);
-            btnClose.TabIndex = 1;
+            btnClose.TabIndex = 14;
             btnClose.Text = "Close";
             btnClose.UseVisualStyleBackColor = true;
             btnClose.Click += btnClose_Click;
@@ -80,7 +80,7 @@
             btnLoad.Location = new Point(118, 143);
             btnLoad.Name = "btnLoad";
             btnLoad.Size = new Size(94, 29);
-            btnLoad.TabIndex = 1;
+            btnLoad.TabIndex = 10;
             btnLoad.Text = "Load";
             btnLoad.UseVisualStyleBackColor = true;
             btnLoad.Click += button2_Click;
@@ -90,7 +90,7 @@
             btnNew.Location = new Point(271, 143);
             btnNew.Name = "btnNew";
             btnNew.Size = new Size(94, 29);
-            btnNew.TabIndex = 1;
+            btnNew.TabIndex = 11;
             btnNew.Text = "New";
             btnNew.UseVisualStyleBackColor = true;
             btnNew.Click += btnNew_Click;
@@ -100,7 +100,7 @@
             btnDelete.Location = new Point(456, 143);
             btnDelete.Name = "btnDelete";
             btnDelete.Size = new Size(94, 29);
-            btnDelete.TabIndex = 1;
+            btnDelete.TabIndex = 12;
             btnDelete.Text = "Delete";
             btnDelete.UseVisualStyleBackColor = true;
             btnDelete.Click += btnDelete_Click;
@@ -119,7 +119,7 @@
             txtMemberID.Location = new Point(90, 14);
             txtMemberID.Name = "txtMemberID";
             txtMemberID.Size = new Size(176, 27);
-            txtMemberID.TabIndex = 3;
+            txtMemberID.TabIndex = 1;
             // 
             // lbEmail
             // 
@@ -152,7 +152,7 @@
             txtPass.Location = new Point(379, 14);
             txtPass.Name = "txtPass";
             txtPass.Size = new Size(171, 27);
-            txtPass.TabIndex = 3;
+            txtPass.TabIndex = 4;
             // 
             // lbCity
             // 
@@ -169,7 +169,7 @@
             txtCity.Location = new Point(379, 56);
             txtCity.Name = "txtCity";
             txtCity.Size = new Size(171, 27);
-            txtCity.TabIndex = 3;
+            txtCity.TabIndex = 5;
             // 
             // lbMemberName
             // 
@@ -185,7 +185,7 @@
             txtMemberName.Location = new Point(90, 56);
             txtMemberName.Name = "txtMemberName";
             txtMemberName.Size = new Size(176, 27);
-            txtMemberName.TabIndex = 3;
+            txtMemberName.TabIndex = 2;
             // 
             // lbCountry
             // 
@@ -201,14 +201,14 @@
             txtCountry.Location = new Point(379, 95);
             txtCountry.Name = "txtCountry";
             txtCountry.Size = new Size(171, 27);
-            txtCountry.TabIndex = 3;
+            txtCountry.TabIndex = 6;
             // 
             // txtSearchID
             // 
             txtSearchID.Location = new Point(718, 14);
             txtSearchID.Name = "txtSearchID";
             txtSearchID.Size = new Size(125, 27);
-            txtSearchID.TabIndex = 4;
+            txtSearchID.TabIndex = 7;
             txtSearchID.TextChanged += txtSearch_TextChanged;
             // 
             // label1
@@ -225,7 +225,7 @@
             btnSort.Location = new Point(634, 143);
             btnSort.Name = "btnSort";
             btnSort.Size = new Size(103, 29);
-            btnSort.TabIndex = 1;
+            btnSort.TabIndex = 13;
             btnSort.Text = "SortByName";
             btnSort.UseVisualStyleBackColor = true;
             btnSort.Click += btnSort_Click;
@@ -246,7 +246,7 @@
             btnFilter.Location = new Point(578, 93);
             btnFilter.Name = "btnFilter";
             btnFilter.Size = new Size(94, 29);
-            btnFilter.TabIndex = 1;
+            btnFilter.TabIndex = 9;
             btnFilter.Text = "Filter";
             btnFilter.UseVisualStyleBackColor = true;
             btnFilter.Click += btnFilter_Click;
@@ -276,7 +276,7 @@
             txtSearchName.Location = new Point(718, 47);
             txtSearchName.Name = "txtSearchName";
             txtSearchName.Size = new Size(125, 27);
-            txtSearchName.TabIndex = 4;
+            txtSearchName.TabIndex = 7;
             txtSearchName.TextChanged += textBox1_TextChanged;
             // 
             // frmMemberManagement
