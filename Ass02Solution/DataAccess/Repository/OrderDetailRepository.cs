@@ -9,29 +9,20 @@ namespace DataAccess.Repository
 {
     public class OrderDetailRepository : IOrderDetailRepository
     {
-        public void DeleteOrderDetail(int OrderDetailId)
-        {
-            throw new NotImplementedException();
-        }
+        public OrderDetailDAO orderDetailDAO = OrderDetailDAO.Instance;
+        public void DeleteOrderDetail(int OrderDetailId) => orderDetailDAO.Remove(OrderDetailId);
+        
 
-        public OrderDetailObject GetOrderDetailByID(int OrderDetailId)
-        {
-            throw new NotImplementedException();
-        }
+        public OrderDetailObject GetOrderDetailByID(int OrderId) => orderDetailDAO.GetOrderDetailByID(OrderId);
+        
 
-        public IEnumerable<OrderDetailObject> GetOrderDetails()
-        {
-            throw new NotImplementedException();
-        }
+        public IEnumerable<OrderDetailObject> GetOrderDetails() => orderDetailDAO.GetOrderDetailList();
+        
 
-        public void InsertOrderDetail(OrderDetailObject OrderDetail)
-        {
-            throw new NotImplementedException();
-        }
+        public void InsertOrderDetail(OrderDetailObject OrderDetail) => orderDetailDAO.insertOrderDetail(OrderDetail);
+        
 
-        public void UpdateOrderDetail(OrderDetailObject OrderDetail)
-        {
-            throw new NotImplementedException();
-        }
+        public void UpdateOrderDetail(OrderDetailObject OrderDetail) => orderDetailDAO.Update(OrderDetail);
+        
     }
 }

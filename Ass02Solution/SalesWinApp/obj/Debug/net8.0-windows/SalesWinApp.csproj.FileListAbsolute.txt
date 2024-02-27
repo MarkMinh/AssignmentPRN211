@@ -49,3 +49,9 @@ F:\VisualStudioDownload\ProjectC#\Ass02Solution\SalesWinApp\obj\Debug\net8.0-win
 F:\VisualStudioDownload\ProjectC#\Ass02Solution\SalesWinApp\obj\Debug\net8.0-windows\SalesWinApp.genruntimeconfig.cache
 F:\VisualStudioDownload\ProjectC#\Ass02Solution\SalesWinApp\obj\Debug\net8.0-windows\ref\SalesWinApp.dll
 F:\VisualStudioDownload\ProjectC#\Ass02Solution\SalesWinApp\obj\Debug\net8.0-windows\SalesWinApp.frmMemberDetails.resources
+F:\VisualStudioDownload\ProjectC#\Ass02Solution\SalesWinApp\obj\Debug\net8.0-windows\SalesWinApp.frmBuy.resources
+F:\VisualStudioDownload\ProjectC#\Ass02Solution\SalesWinApp\obj\Debug\net8.0-windows\SalesWinApp.frmOrderDetails.resources
+F:\VisualStudioDownload\ProjectC#\Ass02Solution\SalesWinApp\obj\Debug\net8.0-windows\SalesWinApp.frmAddOrder.resources
+F:\VisualStudioDownload\ProjectC#\Ass02Solution\SalesWinApp\obj\Debug\net8.0-windows\SalesWinApp.frmUpdateOrder.resources
+F:\VisualStudioDownload\ProjectC#\Ass02Solution\SalesWinApp\obj\Debug\net8.0-windows\SalesWinApp.frmProductDetail.resources
+F:\VisualStudioDownload\ProjectC#\Ass02Solution\SalesWinApp\obj\Debug\net8.0-windows\SalesWinApp.frmStatistic.resources

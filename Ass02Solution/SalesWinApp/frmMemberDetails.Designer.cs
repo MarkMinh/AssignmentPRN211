@@ -55,6 +55,7 @@
             // 
             // txtMemberId
             // 
+            txtMemberId.Enabled = false;
             txtMemberId.Location = new Point(188, 34);
             txtMemberId.Name = "txtMemberId";
             txtMemberId.Size = new Size(232, 27);

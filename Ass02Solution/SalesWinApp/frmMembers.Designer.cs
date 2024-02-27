@@ -71,6 +71,7 @@
             // 
             txtMemberId.Location = new Point(161, 14);
             txtMemberId.Name = "txtMemberId";
+            txtMemberId.ReadOnly = true;
             txtMemberId.Size = new Size(140, 27);
             txtMemberId.TabIndex = 2;
             // 
@@ -87,6 +88,7 @@
             // 
             txtEmail.Location = new Point(161, 62);
             txtEmail.Name = "txtEmail";
+            txtEmail.ReadOnly = true;
             txtEmail.Size = new Size(140, 27);
             txtEmail.TabIndex = 2;
             // 
@@ -103,6 +105,7 @@
             // 
             txtCompany.Location = new Point(161, 111);
             txtCompany.Name = "txtCompany";
+            txtCompany.ReadOnly = true;
             txtCompany.Size = new Size(140, 27);
             txtCompany.TabIndex = 2;
             // 
@@ -119,6 +122,7 @@
             // 
             txtCity.Location = new Point(424, 14);
             txtCity.Name = "txtCity";
+            txtCity.ReadOnly = true;
             txtCity.Size = new Size(140, 27);
             txtCity.TabIndex = 2;
             // 
@@ -135,6 +139,7 @@
             // 
             txtCountry.Location = new Point(424, 62);
             txtCountry.Name = "txtCountry";
+            txtCountry.ReadOnly = true;
             txtCountry.Size = new Size(140, 27);
             txtCountry.TabIndex = 2;
             // 
@@ -159,6 +164,7 @@
             // 
             txtPassword.Location = new Point(424, 111);
             txtPassword.Name = "txtPassword";
+            txtPassword.ReadOnly = true;
             txtPassword.Size = new Size(140, 27);
             txtPassword.TabIndex = 2;
             // 
