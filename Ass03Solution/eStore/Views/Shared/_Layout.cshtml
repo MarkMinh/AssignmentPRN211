@@ -14,7 +14,7 @@
 		<ul style="display:flex">
 			<li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
 			<li><a asp-area="" asp-controller="Product" asp-action="Index">Shopping</a></li>
-			<li><a href="#">Search</a></li>
+			<li><a asp-area="" asp-controller="Product" asp-action="Search">Search</a></li>
 		</ul>
 	</div>
 	<div class="container" style="margin-top:30px">
@@ -23,12 +23,12 @@
 				<ul >
 					<li><a asp-area="" asp-controller="Product" asp-action="Index">Shopping</a></li>
 						<li class="li-child"><a asp-area="" asp-controller="Product" asp-action="Index">Shopping</a></li>
-						<li class="li-child"><a href="#">Search</a></li>
+					<li class="li-child"><a asp-area="" asp-controller="Product" asp-action="Search">Search</a></li>
 					
 						<li class="li-child"><a asp-area="" asp-controller="Member" asp-action="Index">Members</a></li>
 						<li class="li-child"><a asp-area="" asp-controller="Order" asp-action="Index">Orders</a></li>
 						<li class="li-child"><a asp-area="" asp-controller="Order" asp-action="Statistics">Statistics</a></li>
-					<li><a href="#">Logout</a></li>
+					<li><a asp-area="" asp-controller="Access" asp-action="Logout">Logout</a></li>
 				</ul>
 			</div>
 			<div class="col-md-9">

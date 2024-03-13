@@ -8,12 +8,12 @@
 <h1>Statistics</h1>
 
 <form method="post" asp-action="Statistics">
-    <input type="datetime" name="startDate" />
-    <input type="datetime" name="endDate" />
+    <input type="date" name="startDate" />
+    <input type="date" name="endDate" />
 
     
     <div class="form-group">
-        <input type="submit" value="Save" class="btn btn-primary" />
+        <input type="submit" value="View" class="btn btn-primary" />
     </div>
 </form>
 <table class="table">
@@ -61,11 +61,7 @@
             <td>
                 @Html.DisplayFor(modelItem => item.Freight)
             </td>
-            <td>
-
-                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) 
-
-            </td>
+     
         </tr>
 }
     </tbody>

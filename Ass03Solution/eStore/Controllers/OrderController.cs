@@ -55,15 +55,44 @@ namespace eStore.Controllers
         }
 		public ActionResult Statistics()
 		{
-
-			var sta = db.Orders.ToList();
-			return View(sta);
+			if (HttpContext.Session.GetString("admin") != null)
+			{
+				var sta = db.Orders.ToList();
+				return View(sta);
+			}
+			else
+			{
+				var email = HttpContext.Session.GetString("email");
+				var mem = db.Members.SingleOrDefault(m => m.Email == email);
+				if (mem == null)
+				{
+					return NotFound();
+				}
+				var sta = db.Orders.Where(o=>o.MemberId == mem.MemberId);	
+				return View(sta);
+			}
+				
 		}
 		[HttpPost]
 		public ActionResult Statistics(DateTime startDate, DateTime endDate)
 		{
-			var sta = db.Orders.Where(o=>o.OrderDate>=startDate && o.OrderDate <= endDate).ToList();
-			return View(sta);
+            if (HttpContext.Session.GetString("admin") != null)
+			{
+                var sta = db.Orders.Where(o => o.OrderDate >= startDate && o.OrderDate <= endDate).ToList();
+                return View(sta);
+			}
+			else
+			{
+                var email = HttpContext.Session.GetString("email");
+                var mem = db.Members.SingleOrDefault(m => m.Email == email);
+				if(mem == null)
+				{
+					return NotFound();
+				}
+				var sta = db.Orders.Where(o => o.OrderDate >= startDate && o.OrderDate <= endDate && o.MemberId == mem.MemberId).ToList();
+				return View(sta);
+            }
+            
 		}
 
         // POST: OrderController/Create
