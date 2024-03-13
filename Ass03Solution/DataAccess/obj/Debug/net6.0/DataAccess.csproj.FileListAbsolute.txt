@@ -1,0 +1,16 @@
+F:\VisualStudioDownload\ProjectC#\Ass03Solution\DataAccess\bin\Debug\net6.0\appsettings.json
+F:\VisualStudioDownload\ProjectC#\Ass03Solution\DataAccess\bin\Debug\net6.0\DataAccess.deps.json
+F:\VisualStudioDownload\ProjectC#\Ass03Solution\DataAccess\bin\Debug\net6.0\DataAccess.dll
+F:\VisualStudioDownload\ProjectC#\Ass03Solution\DataAccess\bin\Debug\net6.0\DataAccess.pdb
+F:\VisualStudioDownload\ProjectC#\Ass03Solution\DataAccess\bin\Debug\net6.0\BusnessObject.dll
+F:\VisualStudioDownload\ProjectC#\Ass03Solution\DataAccess\bin\Debug\net6.0\BusnessObject.pdb
+F:\VisualStudioDownload\ProjectC#\Ass03Solution\DataAccess\obj\Debug\net6.0\DataAccess.csproj.AssemblyReference.cache
+F:\VisualStudioDownload\ProjectC#\Ass03Solution\DataAccess\obj\Debug\net6.0\DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+F:\VisualStudioDownload\ProjectC#\Ass03Solution\DataAccess\obj\Debug\net6.0\DataAccess.AssemblyInfoInputs.cache
+F:\VisualStudioDownload\ProjectC#\Ass03Solution\DataAccess\obj\Debug\net6.0\DataAccess.AssemblyInfo.cs
+F:\VisualStudioDownload\ProjectC#\Ass03Solution\DataAccess\obj\Debug\net6.0\DataAccess.csproj.CoreCompileInputs.cache
+F:\VisualStudioDownload\ProjectC#\Ass03Solution\DataAccess\obj\Debug\net6.0\DataAccess.csproj.CopyComplete
+F:\VisualStudioDownload\ProjectC#\Ass03Solution\DataAccess\obj\Debug\net6.0\DataAccess.dll
+F:\VisualStudioDownload\ProjectC#\Ass03Solution\DataAccess\obj\Debug\net6.0\refint\DataAccess.dll
+F:\VisualStudioDownload\ProjectC#\Ass03Solution\DataAccess\obj\Debug\net6.0\DataAccess.pdb
+F:\VisualStudioDownload\ProjectC#\Ass03Solution\DataAccess\obj\Debug\net6.0\ref\DataAccess.dll

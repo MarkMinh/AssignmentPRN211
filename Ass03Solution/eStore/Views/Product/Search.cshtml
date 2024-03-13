@@ -1,0 +1,77 @@
+﻿@model IEnumerable<BusinessObject.ProductObject>
+
+@{
+    ViewData["Title"] = "Search";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Search</h1>
+
+
+<section class="products">
+    <h2>Sản phẩm</h2>
+    <form asp-action="Search">
+        <label for="product-name">Product Name:</label>
+        <input type="text" id="product-name" name="txtSearch">
+        <label for="price-range">Price:</label>
+        
+        <button type="submit">Search</button>
+    </form>
+    |
+    <form asp-action="Filter">
+        <label for="price-range">Price:</label>
+        <select id="price-range" name="price">
+            <option value="0">All</option>
+            <option value="0-50">Dưới $50</option>
+            <option value="50-100">$50 - $100</option>
+            <option value="100-200">$100 - $200</option>
+            <option value="200-">Trên $200</option>
+        </select>
+        <button type="submit">Filter</button>
+    </form>
+
+</section>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.ProductId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ProductName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Weight)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.UnitPrice)
+            </th>
+
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ProductId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ProductName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Weight)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.UnitPrice)
+                </td>
+                <td>
+
+                    @Html.ActionLink("Details", "Details", new { id = item.ProductId })
+ 
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
